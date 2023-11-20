@@ -43,6 +43,10 @@ reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Pers
 
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v "AppsUseLightTheme" /t REG_DWORD /d 0 /f > nul 2>&1
 
+echo   [*INFO] Deleting garbage services
+
+sc delete AppReadiness > nul 2>&1
+
 echo   [*INFO] Compacting OS
 
 timeout /t 3 /nobreak > nul
