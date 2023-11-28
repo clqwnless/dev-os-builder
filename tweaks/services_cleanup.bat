@@ -409,6 +409,20 @@ reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WinRM" /f >
 
 reg add "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WSearch" /v "Start" /t REG_DWORD /d 4 /f > nul 2>&1"
 
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BthEnum" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BthHFEnum" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BthLEEnum" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BthMini" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BTHMODEM" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BTHPORT" /f > nul 2>&1
+
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\BTHUSB" /f > nul 2>&1
+
 
 rem if you delete event viewer system will not run
 rem critical services (not all):
