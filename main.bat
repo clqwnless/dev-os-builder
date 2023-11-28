@@ -4,7 +4,7 @@
 ::                                              ::
 ::                                              ::
 ::                                              ::
-::    WINDOWS 10 1809 LTSC OFFLINE OPTIMIZER    ::
+::    WINDOWS 10 2019 LTSC OFFLINE OPTIMIZER    ::
 ::        MADE BY GITHUB.COM/CLQWNLESS          ::
 ::                                              ::
 ::                                              ::
