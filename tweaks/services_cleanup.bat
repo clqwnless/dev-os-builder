@@ -71,7 +71,7 @@ reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Spooler" /f
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\TabletInputService" /f > nul 2>&1
 
-reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\wscsvc" /f > nul 2>&1
+reg add "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\wscsvc" /v "Start" /t REG_DWORD /d 4 /f > nul 2>&1
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\InstallService" /f > nul 2>&1
 
@@ -381,7 +381,7 @@ rem start
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\SamSs" /f > nul 2>&1
 
-reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WinHttpAutoProxySvc" /f > nul 2>&1
+rem reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WinHttpAutoProxySvc" /f > nul 2>&1
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Themes" /f > nul 2>&1
 
