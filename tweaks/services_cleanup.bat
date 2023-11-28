@@ -409,6 +409,7 @@ reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\RemoteAcces
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WinRM" /f > nul 2>&1
 
+reg add "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WSearch" /v "Start" /t REG_DWORD /d 4 /f > nul 2>&1"
 
 rem if you delete event viewer system will not run
 rem critical services (not all):
