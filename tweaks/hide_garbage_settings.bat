@@ -1,7 +1,7 @@
 @echo off
 
 
-reg add "HKEY_LOCAL_MACHINE\OFFLINE_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "SettingsPageVisibility" /t REG_SZ /d "hide:windowsdefender;windowsupdate;delivery-optimization;findmydevice;developers;windowsinsider;cortana-permissions;cortana-moredetails;mobile-devices;gaming-gamebar;gaming-gamedvr;gaming-broadcasting;gaming-gamemode;gaming-xboxnetworking;keyboard;speech;backup;recovery;privacy-feedback;privacy-speech;printers;bluetooth;pen;backup;troubleshoot;recovery;activation;quiethours;storagesense;tabletmode;easeofaccess-eyecontrol;easeofaccess-speechrecognition;workplace;maps;appsforwebsites;remotedesktop;themes" /f > nul 2>&1
+reg add "HKEY_LOCAL_MACHINE\OFFLINE_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "SettingsPageVisibility" /t REG_SZ /d "hide:windowsdefender;windowsupdate;delivery-optimization;findmydevice;developers;windowsinsider;cortana-permissions;cortana-moredetails;mobile-devices;gaming-gamebar;gaming-gamedvr;gaming-broadcasting;gaming-gamemode;gaming-xboxnetworking;keyboard;speech;backup;recovery;privacy-feedback;privacy-speech;printers;bluetooth;pen;backup;troubleshoot;recovery;activation;quiethours;storagesense;tabletmode;easeofaccess-eyecontrol;easeofaccess-speechrecognition;workplace;maps;appsforwebsites;remotedesktop;themes;datausage" /f > nul 2>&1
 
 reg add "HKEY_LOCAL_MACHINE\OFFLINE_DEFAULT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "DisallowCpl" /t REG_DWORD /d 1 /f > nul 2>&1
 
