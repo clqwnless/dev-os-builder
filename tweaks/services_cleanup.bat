@@ -247,7 +247,7 @@ rem reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\EntAppS
 
 rem entappsvc may crash system i think. disabling it (only temporary)
 
-reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Eaphost" /f > nul 2>&1
+rem reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Eaphost" /f > nul 2>&1
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\fdPHost" /f > nul 2>&1
 
@@ -277,9 +277,7 @@ rem LxpSvc may crash system i think. disabling it (only temporary)
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\lltdsvc" /f > nul 2>&1
 
-rem reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\wlpasvc" /f > nul 2>&1
-
-rem wlpasvc may crash system i think. disabling it (only temporary)
+reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\wlpasvc" /f > nul 2>&1
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\diagnosticshub.standardcollector.service" /f > nul 2>&1
 
@@ -410,6 +408,7 @@ reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\RemoteAcces
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WinRM" /f > nul 2>&1
 
 reg add "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WSearch" /v "Start" /t REG_DWORD /d 4 /f > nul 2>&1"
+
 
 rem if you delete event viewer system will not run
 rem critical services (not all):
