@@ -103,7 +103,7 @@ reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\bthserv" /f
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\PeerDistSvc" /f > nul 2>&1
 
-reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Wecsvc" /f > nul 2>&1
+rem reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\Wecsvc" /f > nul 2>&1
 
 reg delete "HKEY_LOCAL_MACHINE\OFFLINE_SYSTEM\ControlSet001\Services\WdNisSvc" /f > nul 2>&1
 
