@@ -13,4 +13,4 @@ if "%1" == "" (
 
 set mount_path=%1
 
-del /s /q %mount_path:~0,-1%\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessibility\Narrator.lnk" > nul 2>&1
+del /s /q %mount_path:~0,-1%\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessibility\Narrator.lnk" > nul 2>&1
