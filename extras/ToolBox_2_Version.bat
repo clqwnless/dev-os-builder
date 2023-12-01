@@ -89,7 +89,7 @@ echo  [1]  ^|  Clear all event viewer logs                [11]  ^|  Brave Browse
 echo  [2]  ^|  Compress OS (LZX)                          [12]  ^|  FireFox
 echo  [3]  ^|  Right click open Command Prompt here       [13]  ^|  Thorium
 echo  [4]  ^|  Right click take Ownership Menu            [14]  ^|  7-Zip
-echo  [5]  ^|  Theme configuration                        [15]  ^|  Notepad+
+echo  [5]  ^|  Theme configuration                        [15]  ^|  Notepad++
 echo.
 echo  OTHER ^| ETC                                        REBOOT ^| SHUTDOWN ^| EXIT
 echo  ------------                                       -------------------------
