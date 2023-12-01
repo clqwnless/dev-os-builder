@@ -209,6 +209,10 @@ echo   [*INFO] Deleting Speech Recognition from start menu
 
 call bin\delete\speech_recognition_start_menu.bat %mount_path%
 
+echo   [*INFO] Deleting Narrator from start menu
+
+call bin\delete\narrator_start_menu.bat %mount_path%
+
 rem echo   [*INFO] Deleting Event Viewer
 
 rem call bin\delete\eventviewer.bat %mount_path%
