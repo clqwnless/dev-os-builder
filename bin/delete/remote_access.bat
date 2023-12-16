@@ -1,17 +1,15 @@
 @echo off
 
 
-:: %1 is mount_path
+set mount_path="%~1"
 
-if "%1" == "" (
+if %mount_path% == "" (
     echo.
     echo   [*ERROR] Mount path argument required
     echo.
     pause
     exit /b 1
 )
-
-set mount_path=%1
 
 del /s /q %mount_path:~0,-1%\Windows\System32\mstsc.exe" > nul 2>&1
 del /s /q %mount_path:~0,-1%\Windows\System32\mstscax.dll" > nul 2>&1
