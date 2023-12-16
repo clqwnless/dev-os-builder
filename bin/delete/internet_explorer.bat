@@ -2,6 +2,9 @@
 
 
 set mount_path="%~1"
+set arch=%2
+set x64_ie=Internet-Explorer-Optional-amd64
+set x86_ie=Internet-Explorer-Optional-x86
 
 if %mount_path% == "" (
     echo.
@@ -11,18 +14,13 @@ if %mount_path% == "" (
     exit /b 1
 )
 
-if "%2" == "" (
+if "%arch%" == "" (
     echo.
     echo   [*ERROR] Architecture argument required
     echo.
     pause
     exit /b 1
 )
-
-set arch=%2
-
-set x64_ie=Internet-Explorer-Optional-amd64
-set x86_ie=Internet-Explorer-Optional-x86
 
 if %arch% == x64 (
     dism /Image:%mount_path% /Disable-Feature /FeatureName:%x64_ie% /Remove
