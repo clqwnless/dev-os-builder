@@ -1,11 +1,9 @@
 @echo off
 
 
-:: %1 is mount_path
-:: %2 is architecture
+set mount_path="%~1"
 
-
-if "%1" == "" (
+if %mount_path% == "" (
     echo.
     echo   [*ERROR] Mount path argument required
     echo.
@@ -21,7 +19,6 @@ if "%2" == "" (
     exit /b 1
 )
 
-set mount_path=%1
 set arch=%2
 
 set x64_ie=Internet-Explorer-Optional-amd64
