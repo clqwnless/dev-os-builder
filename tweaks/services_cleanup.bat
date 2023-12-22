@@ -223,9 +223,6 @@ for %%i in (
     mrxsmb
     mrxsmb20
     MsBridge
-    MRxDAV
-    mrxsmb
-    mrxsmb20
     MSTEE
     NdisCap
     NdisImPlatform
