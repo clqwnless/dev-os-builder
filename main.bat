@@ -254,7 +254,7 @@ echo.
 
 echo   [*INFO] Cleaning WinSxS (This can take a while)
 
-python bin\winsxs_cleanup.py -mount_path %mount_path% > nul 2>&1
+python bin\winsxs_cleanup.py --mount_path %mount_path% > nul 2>&1
 
 echo   [*INFO] Deleting bloaty system apps
 
