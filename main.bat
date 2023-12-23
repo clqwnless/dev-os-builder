@@ -142,7 +142,7 @@ echo.
 
 set update_path=
 
-echo   [*] Update path (it should be cbs or msu):
+echo   [*] Update path (it should be cab or msu):
 
 set /p update_path=">>> "
 
