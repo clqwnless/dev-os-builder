@@ -213,6 +213,10 @@ echo   [*INFO] Deleting Narrator from start menu
 
 call bin\delete\narrator_start_menu.bat %mount_path%
 
+echo   [*INFO] Deleting SgrmBroker
+
+call bin\delete\sgrmbroker.bat %mount_path%
+
 rem echo   [*INFO] Deleting Event Viewer
 
 rem call bin\delete\eventviewer.bat %mount_path%
