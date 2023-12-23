@@ -7,7 +7,7 @@ def get_mount_path() -> str:
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
-        "-mount_path",
+        "--mount_path",
         "-mp",
         help="Mount Path Argument",
         required=True
